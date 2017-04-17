@@ -15,9 +15,6 @@ void check_cards(bool& four, bool& three, bool& pair, bool& two_pair, short num_
 
 int main()
 {
-	char choice;
-	do
-	{
 		string card[fiveCards];
 		short value[fiveCards];
 		string value_str[fiveCards];
@@ -76,11 +73,6 @@ int main()
 		{
 			cout << "Nothing\n\n";
 		}
-
-		cout << "Do you wish to run this program again? (y/n): ";
-		cin >> choice;
-
-	} while (choice == 'y' || choice == 'Y');
 
 	cout << "End of the program.\n\n";
 	system("pause");
