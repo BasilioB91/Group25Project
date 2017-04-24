@@ -21,10 +21,10 @@ int main()
 		string suit[fiveCards];
 		for (short i = 0; i < fiveCards; i++)
 		{
-			cout << "Enter a card #" << i + 1 << " in suit/value format: ";
+			cout << "Enter a card #" << i + 1 << " in value/suit format: ";
 			getline(cin, card[i]);
-			suit[i] = card[i].substr(0, 1);
-			value_str[i] = card[i].substr(1, card[i].length() - 1);
+			value_str[i] = card[i].substr(0, 1);
+			suit[i] = card[i].substr(1, card[i].length() - 1);
 		}
 		convert_array(value_str, value);
 
